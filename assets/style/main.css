@@ -1,11 +1,72 @@
-body{
-    background-color: black;
+/*Debugging Purposes*/
+/** {    border: 1px solid white;}*/
+
+body {
+    background: url("../img/background.jpg");
+    background-size: cover;
+    font-family: Verdana, serif;
+    color: #f04937;
+}
+
+nav {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: 450px;
+    text-transform: uppercase;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav li {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: x-large;
+}
+
+nav li:hover {
+    color: #ffffff;
+}
+
+nav li:active {
+    text-shadow: none;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#header-logo {
+    display: block;
+    margin: -10px auto auto;
 }
 
 #logo {
-    position: relative;
-    top:20%;
     display: block;
-    margin: auto;
+    margin: 5% auto auto;
+    height: 400px;
+    width: 400px;
+}
 
+#nav-bar {
+    display: block;
+    margin: 5% auto auto;
+    color: #ffffff;
 }
