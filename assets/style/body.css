@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+
+#logo-button {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 25px;
+    height: 125px;
+    width: 125px;
+}
+
+#logo-button img{
+    height: 100px;
+    width: 100px;
+}
