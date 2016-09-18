@@ -8,6 +8,15 @@ body {
     color: #f04937;
 }
 
+header {
+    background-color: #f04937;
+    color: white;
+}
+
+header img {
+    background-color: red;
+}
+
 nav {
     display: block;
     margin: 20px auto;
@@ -52,14 +61,19 @@ footer {
     font-size: x-small;
 }
 
+.spacer {
+    display: block;
+    height:100px;
+}
+
 #header-logo {
     display: block;
-    margin: -10px auto auto;
+    margin: auto;
+    height:120px;
 }
 
 #logo {
     display: block;
-    margin: 5% auto auto;
-    height: 400px;
-    width: 400px;
+    margin: auto;
+    height: 200px;
 }
