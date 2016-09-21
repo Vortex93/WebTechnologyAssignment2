@@ -59,7 +59,7 @@
 body {
     background: url("../img/background.jpg") no-repeat fixed;
     background-size: cover;
-    font-family: Verdana, serif;
+    font-family: "Lato", sans-serif;
 }
 
 header {
@@ -111,8 +111,34 @@ nav li a:hover {
 }
 
 form input {
-
+    padding:5px;
+    margin:5px;
+    display: block;
+    border:solid #790d0d 1px;
+    border-radius: 5px;
 }
+
+form textarea {
+    padding: 5px;
+    margin:5px;
+    border: solid #790d0d 1px;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    background-color: #f04937;
+    font-weight: bold;
+    border: solid 2px #790d0d;
+    border-radius: 4px;
+}
+
+form button:hover {
+    color: #ffffff;
+}
+
 
 .container {
     margin: 200px auto;
@@ -135,33 +161,6 @@ form input {
     border-radius: 20px;
 }
 
-.parallax {
-    -ms-perspective-origin-x: 100%;
-    perspective-origin-x: 100%;
-}
+@media screen and (device-width: 320px and device-height:640px){
 
-.parallax_layer {
-    transform-origin-x: 100%;
-}
-
-.parallax_group {
-    position: absolute;
-    height: 100vh;
-    transform-style: preserve-3d;
-}
-
-.parallax_back {
-    -webkit-transform: translateZ(-1px) scale(1);
-    -moz-transform: translateZ(-1px) scale(1);
-    -ms-transform: translateZ(-1px) scale(1);
-    -o-transform: translateZ(-1px) scale(1);
-    transform: translateZ(-1px) scale(1);
-}
-
-.parallax_base {
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    transform: translateZ(0);
 }
