@@ -72,8 +72,56 @@ footer {
     height:120px;
 }
 
+#logos {
+    position: relative;
+}
+
+#logo-1,
+#logo-2,
+#logo-3,
+#logo-4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
 #logo {
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     display: block;
     margin: auto;
-    height: 200px;
+    border-radius: 50%;
+}
+
+#logo-biography {
+    border: 1px solid white;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+#logo-shop {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+#logo-repertoire {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+#logo:hover {
+    background-color: rgba(25, 25, 25, .5);
+    -webkit-transform: rotateZ(+90deg) scale(1.3);
+    -ms-transform: rotateZ(+90deg) scale(1.3);
+    transform: rotate(+90deg) scale(1.3);
 }
