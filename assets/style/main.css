@@ -1,6 +1,19 @@
 /*Debugging Purposes*/
 /** {    border: 1px solid blue;}*/
 
+body:before{
+    content:"";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    
+    /* Apply shadow to the top */
+    -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+}
 body {
     background: url("../img/background0.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -8,6 +21,7 @@ body {
     -o-background-size: cover;
     background-size:cover;
     
+    /* Transition effects for the image change */
     transition: background-image 2s ease-in-out;
     
     font-family: Verdana, serif;
@@ -29,6 +43,8 @@ nav ul {
     padding: 0;
     overflow: hidden;
     width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 20px #000000;
 }
 
 nav li {
@@ -44,8 +60,6 @@ nav li a {
     text-decoration: none;
     color: #f04937;
     font-weight: bold;
-    
-    
 }
 
 nav li a:hover {
