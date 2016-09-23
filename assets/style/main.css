@@ -1,5 +1,5 @@
 /*Debugging Purposes*/
-/** {    border: 1px solid white;}*/
+/** {    border: 1px solid blue;}*/
 
 body {
     background: url("../img/background.jpg");
@@ -9,12 +9,11 @@ body {
 }
 
 header {
-    background-color: #f04937;
     color: white;
 }
 
 header img {
-    background-color: red;
+    
 }
 
 nav {
@@ -74,6 +73,8 @@ footer {
 
 #logos {
     position: relative;
+    top: 0;
+    left: 0;
 }
 
 #logo-1,
@@ -98,11 +99,14 @@ footer {
     display: block;
     margin: auto;
     border-radius: 50%;
+    
+    background-image: url("../img/logo.png");
 }
 
 #logo-biography {
-    border: 1px solid white;
     position: relative;
+    left: -100px;
+    top: 175px;
     display: block;
     margin: auto;
 }
