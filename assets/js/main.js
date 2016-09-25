@@ -1,6 +1,8 @@
 /**
  * Created by Derwin on 17-Sep-16.
  */
+//global var
+var incorrect = input.style.color = '#f00';
 
 function init(){
 
@@ -17,15 +19,23 @@ function validate() {
 User = new function (firstName, lastName, email, message) {
     if (checkEmail(email)) {
         this.email = email;
+    } else {
+        document.getElementById("first-name").innerHTML = incorrect;
     }
     if (checkFirstName(firstName)) {
         this.firstName = firstName;
+    } else {
+        document.getElementById("last-name").innerHTML = incorrect;
     }
     if (checkLastName(lastName)) {
         this.lastName = lastName;
+    } else {
+        document.getElementById("email").innerHTML = incorrect;
     }
     if (checkMessage()) {
         this.message = message;
+    } else {
+        document.getElementById("message").innerHTML = incorrect
     }
 }
 function checkFirstName(firstName) {
