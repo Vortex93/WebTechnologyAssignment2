@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f76daafd-7024-4825-aaa5-d626c9e508df" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/style/body.css" afterPath="$PROJECT_DIR$/assets/style/body.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/biography.html" afterPath="$PROJECT_DIR$/biography.html" />
     </list>
     <ignored path="Web Technology.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/assets/style/body.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="705">
-              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+              <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -38,7 +36,7 @@
       <file leaf-file-name="biography.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/biography.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="-170">
               <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding />
             </state>
@@ -243,10 +241,11 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/background1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/background2.jpg</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/js/main.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/style/main.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/style/body.css</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/contact.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/index.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -254,9 +253,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/background0.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/background1.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/background2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/background3.jpg</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -264,8 +261,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/background-page.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/background.jpg</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -769,7 +764,7 @@
       <workItem from="1474021155836" duration="3720000" />
       <workItem from="1474122758652" duration="334000" />
       <workItem from="1474123100942" duration="27833000" />
-      <workItem from="1474482396717" duration="28819000" />
+      <workItem from="1474482396717" duration="28861000" />
     </task>
     <task id="LOCAL-00001" summary="add all img parts to right position">
       <created>1474629393585</created>
@@ -799,11 +794,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474819990446</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add biography">
+      <created>1474830583542</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1474830583542</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62964000" />
+    <option name="totallyTimeSpent" value="63006000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -852,7 +854,8 @@
     <MESSAGE value="add functions to main.js" />
     <MESSAGE value="add validate function" />
     <MESSAGE value="added color changing" />
-    <option name="LAST_COMMIT_MESSAGE" value="added color changing" />
+    <MESSAGE value="add biography" />
+    <option name="LAST_COMMIT_MESSAGE" value="add biography" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1058,14 +1061,14 @@
     <entry file="file://$PROJECT_DIR$/assets/style/body.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/biography.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="-170">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding />
         </state>
