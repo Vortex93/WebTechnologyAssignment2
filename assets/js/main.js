@@ -2,9 +2,9 @@
  * Created by Derwin on 17-Sep-16.
  */
 var predefinedBackgrounds = [
-    "../img/background0.jpg",
-    "../img/background1.jpg",
-    "../img/background2.jpg"
+    "background0.jpg",
+    "background1.jpg",
+    "background2.jpg"
 ];
 
 function init(){
@@ -49,6 +49,10 @@ function backgroundChanger(){
     var index = 1;
     
     setInterval(function(){
+        document.body.style.background = 'url("assets/img/'+ predefinedBackgrounds[index]+'") no-repeat fixed';
+        document.body.style.backgroundSize = 'cover';
         
+        //Change index
+        index = (index + 1) % predefinedBackgrounds.length;
     }, 5000);
 }
