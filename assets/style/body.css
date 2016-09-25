@@ -12,7 +12,12 @@ header {
     background-color: black;
 }
 
-header img {
+header button {
+    background-color: black;
+    float: right;
+}
+
+header img{
     margin: auto;
     display: block;
     height:60px;
@@ -102,6 +107,8 @@ form button:hover {
     margin-left: 20px;
     border-radius: 20px;
 }
+
+
 
 /*@media screen and (device-width: 320px and device-height:640px){*/
 
