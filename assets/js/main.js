@@ -2,39 +2,55 @@
  * Created by Derwin on 17-Sep-16.
  */
 
-//Predefined
-var predefinedBackgroundImages = [
-    "assets/img/background0.jpg",
-    "assets/img/background1.jpg",
-    "assets/img/background2.jpg"
-];
-
-
-
 function init(){
-    var pageName = getPageName();
-    
-    switch(pageName){
-        case "/index.html":
-            backgroundChanger();
-            break;
+    User.push = new User(document.getElementById("first-name").valueOf(),
+        document.getElementById("Last-name").valueOf(),
+        document.getElementById("email").valueOf(),
+        document.getElementById("message").valueOf());
+}
+
+//user
+User = new function (firstName, lastName, email, message) {
+    if (checkEmail(email)) {
+        this.email = email;
+    }
+    if (checkFirstName(firstName)) {
+        this.firstName = firstName;
+    }
+    if (checkLastName(lastName)) {
+        this.lastName = lastName;
+    }
+    if (checkMessage()) {
+        this.message = message;
+    }
+}
+function checkFirstName(firstName) {
+    if (firstName == null || firstName == "") {
+        return false;
+    } else {
+        return true;
     }
 }
 
-function backgroundChanger(){
-    //This counter helps go through the images.
-    //Counter starts at 1 because the image 0 is loaded at start.
-    var counter = 1; 
-    
-    setInterval(function(){
-        document.body.style.background = 'url("' + predefinedBackgroundImages[counter] +'") no-repeat center center fixed';
-        document.body.style.backgroundSize = 'cover';
-        
-        //Increase counter while not exceeding the amount of predefined images.
-        counter = (counter + 1) % predefinedBackgroundImages.length;
-    },5000);
+function checkLastName(lastName) {
+    if (lastName == null || lastName == "") {
+        return false;
+    } else {
+        return true;
+    }
 }
 
-function getPageName(){
-    return window.location.pathname;
+function checkEmail(email) {
+    var validEmail = /\S+@\S+\.\S+/;
+    return validEmail.test(email)
 }
+
+function checkMessage(message) {
+    if (message == null || message == "") {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+
