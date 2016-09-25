@@ -3,7 +3,11 @@
  */
 
 function init(){
-    User.push = new User(document.getElementById("first-name").valueOf(),
+
+}
+
+function validate() {
+    var user = new User(document.getElementById("first-name").valueOf(),
         document.getElementById("Last-name").valueOf(),
         document.getElementById("email").valueOf(),
         document.getElementById("message").valueOf());
