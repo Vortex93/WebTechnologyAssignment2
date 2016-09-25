@@ -14,8 +14,8 @@ function init(){
 
 function validate(){
     //Get values from the form
-    var firstName = document.getElementById("first-name").value;
-    var lastName = document.getElementById("last-name").value;
+    var firstName = document.getElementById("first_name").value;
+    var lastName = document.getElementById("last_name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
     

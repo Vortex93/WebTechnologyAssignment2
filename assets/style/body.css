@@ -1,3 +1,7 @@
+html{
+    overflow: auto;
+}
+
 body:before {
     box-shadow: 0px 0px 20px black;
 }
@@ -6,8 +10,12 @@ body {
     background: url("../img/background0.jpg") no-repeat fixed;
     background-size: cover;
     font-family: "Lato", sans-serif;
-    
     transition: background-image 3s ease;
+    height: 0px;
+}
+
+h1 {
+    text-transform: uppercase;
 }
 
 header {
@@ -15,9 +23,11 @@ header {
     top: 0px;
     left: 0px;
     width: 100vw;
+    min-width: 600px;
     height: 60px;
     background-color: black;
     border-bottom: 2px solid maroon;
+    box-shadow: 0 0 20px black;
     z-index: 0;
 }
 
@@ -69,9 +79,10 @@ nav li a {
     position: relative;
     top: 20vh;
     background-color: black;
-    margin: auto;
+    margin: auto auto 50px auto;
     display: block;
     width: 75vw;
+    min-height: 50vh;
     padding: 10px;
     box-shadow: 0px 0px 15px black;
     color: white;
@@ -79,9 +90,91 @@ nav li a {
     z-index: -1;
 }
 
-.container img {
+.container + img {
     float: right;
+    width: 20vw;
+    min-width: 200px;
     border: 2px solid maroon;
+}
+
+.gallery_img {
+    height: 40vh;
+    min-height: 200px;
+}
+
+.video {
+    width: 820px;
+    height: 460px;
+    float: none;
+    clear: both;
+    margin: 2px auto;
+    z-index: 1;
+}
+
+input {
+    border: 2px solid maroon;
+    width: 200px;
+    height: 30px;
+    display: block;
+}
+
+button {
+    display: block;
+    font-size: 20px;
+}
+
+/*Tablet*/
+@media (max-width: 1024px){
+    header {
+        height: 120px;
+    }
+
+    header nav {
+        margin: 60px auto;
+        float: left;
+    }
+    
+    footer {
+        width: 100vw;
+        background-color: black;
+        border: 2px solid maroon;
+        box-shadow: 0 0 10px black;
+    }
+    .container {
+        background-color: red;
+        margin: auto auto 60px auto;
+    }
+    
+}
+
+/*Mobile*/
+@media (max-width:480px){
+    
+    header {
+        height: 60px;
+        width: 100vw;
+    }
+    
+    header nav {
+        margin: 0;
+    }
+    
+    header img {
+        display: none;
+    }
+    
+    nav li{
+        padding: 20px 15px;
+    }
+    
+    .container{
+        background-color: green;
+    }
+    
+    .container img {
+        float: left;
+    }
+    
 }
 
 /*

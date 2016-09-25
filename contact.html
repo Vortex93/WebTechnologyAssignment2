@@ -2,13 +2,13 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Contact</title>
+    <title>Biography</title>
     <link rel="stylesheet" href="assets/style/body.css">
+    <script src="assets/js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!--<meta http-equiv="refresh" content="0.5;">-->
 </head>
-<body>
-<!--<button id="logo-button" onclick="window.location.href ='index.html'"><img src="assets/img/logo.png"></button>-->
+<body onload="init()">
 <header>
     <nav>
         <ul>
@@ -18,30 +18,24 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <img src="assets/img/header-logo.png">
+    <div id="nav_logo">
+        <img src="assets/img/header-logo.png">
+        <a href="index.html"><img src="assets/img/logo.png"></a>
+    </div>
 </header>
 
 <div class="container">
-    <div class="bar"></div>
     <main>
-        <article>
-            <h1>Contact Us</h1>
-            <p>We are here to answer any questions you may have about our website/band.
-            Reach out to us and we'll respond as soon as we can.</p>
-
-            <p>Even if there is something you have always wanted to know and can't find it on the band website, let us
-            know and we promise we'll do our best to find it for you and send you there.</p>
-        </article>
-        <form method="get" onsubmit="validate()">
-            <input id="first-name" type="text" name="first_name" placeholder="First Name">
-            <input id="last-name" type="text" name="last_name" placeholder="Last Name">
-            <!--Due to the requirements of the assignment, the javascript will do the checking rather than the input type email-->
-            <input id="email" type="text" name="email" placeholder="E-mail">
-            <textarea id="message" name="message" cols="50" rows="10" title="message"></textarea>
-            <button type="submit">Submit</button>
-        </form>
+    <form method="get" onsubmit="validate()">
+        <input type="text" id="first_name" name="first_name" placeholder="First Name">
+        <input type="text" id="last_name" name="last_name" placeholder="Last Name">
+        <input type="text" id="email" name="email" placeholder="Email">
+        <textarea rows="10" id="message" cols="40" name="message">
+        </textarea>
+        <button type="submit">Submit</button>
+    </form>
     </main>
 </div>
-
+<footer>Copyright &copy 2016</footer>
 </body>
 </html>
