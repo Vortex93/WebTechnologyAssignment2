@@ -1,7 +1,13 @@
+body:before {
+    box-shadow: 0px 0px 20px black;
+}
+
 body {
-    background: url("../img/background.jpg") no-repeat fixed;
+    background: url("../img/background0.jpg") no-repeat fixed;
     background-size: cover;
     font-family: "Lato", sans-serif;
+    
+    transition: background-image 3s ease;
 }
 
 header {
