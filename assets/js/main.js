@@ -4,7 +4,8 @@
 var predefinedBackgrounds = [
     "background0.jpg",
     "background1.jpg",
-    "background2.jpg"
+    "background2.jpg",
+    "background3.jpg"
 ];
 
 function init(){
