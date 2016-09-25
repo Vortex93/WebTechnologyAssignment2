@@ -1,70 +1,54 @@
 /**
  * Created by Derwin on 17-Sep-16.
  */
-//global var
-var incorrect = input.style.color = '#f00';
+var predefinedBackgrounds = [
+    "../img/background0.jpg",
+    "../img/background1.jpg",
+    "../img/background2.jpg"
+];
 
 function init(){
-
+    backgroundChanger();
 }
 
-function validate() {
-    var user = new User(document.getElementById("first-name").valueOf(),
-        document.getElementById("Last-name").valueOf(),
-        document.getElementById("email").valueOf(),
-        document.getElementById("message").valueOf());
-}
+function validate(){
+    //Get values from the form
+    var firstName = document.getElementById("first-name").value;
+    var lastName = document.getElementById("last-name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    
+    //Do validation check
+    var error = 0;
+    
+    if(firstName.length == 0 || lastName.length == 0 || message.length == 0) {
+        //Empty
+        error++;
+    }
 
-//user
-User = new function (firstName, lastName, email, message) {
-    if (checkEmail(email)) {
-        this.email = email;
+    if(email.length == 0){
+        //Empty
+        
     } else {
-        document.getElementById("first-name").innerHTML = incorrect;
+        //Using this pattern to validate if the input is correctly typed email
+        var pattern = /[a-z0-9]+[_a-z0-9\.-]*[a-z0-9]+@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})/;
+        var regex = new RegExp(pattern);
+        
+        if(!regex.test(email)){
+            error++;
+        }
     }
-    if (checkFirstName(firstName)) {
-        this.firstName = firstName;
-    } else {
-        document.getElementById("last-name").innerHTML = incorrect;
-    }
-    if (checkLastName(lastName)) {
-        this.lastName = lastName;
-    } else {
-        document.getElementById("email").innerHTML = incorrect;
-    }
-    if (checkMessage()) {
-        this.message = message;
-    } else {
-        document.getElementById("message").innerHTML = incorrect
-    }
-}
-function checkFirstName(firstName) {
-    if (firstName == null || firstName == "") {
-        return false;
-    } else {
-        return true;
+    
+    if(error){
+        alert("Form is not valid.");
     }
 }
 
-function checkLastName(lastName) {
-    if (lastName == null || lastName == "") {
-        return false;
-    } else {
-        return true;
-    }
+function backgroundChanger(){
+    //index 0 is loaded upon opening of the website
+    var index = 1;
+    
+    setInterval(function(){
+        
+    }, 5000);
 }
-
-function checkEmail(email) {
-    var validEmail = /\S+@\S+\.\S+/;
-    return validEmail.test(email)
-}
-
-function checkMessage(message) {
-    if (message == null || message == "") {
-        return false;
-    } else {
-        return true;
-    }
-}
-
-

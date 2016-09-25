@@ -5,10 +5,9 @@
     <title>Contact</title>
     <link rel="stylesheet" href="assets/style/body.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<meta http-equiv="refresh" content="0.5;">-->
     <script type="text/javascript" src="assets/js/main.js"></script>
 </head>
-<body onload="init();">
+<body>
 <!--<button id="logo-button" onclick="window.location.href ='index.html'"><img src="assets/img/logo.png"></button>-->
 <header>
     <nav>
@@ -33,12 +32,13 @@
             <p>Even if there is something you have always wanted to know and can't find it on the band website, let us
             know and we promise we'll do our best to find it for you and send you there.</p>
         </article>
-        <form method="get">
+        <form method="get" onsubmit="validate()">
             <input id="first-name" type="text" name="first_name" placeholder="First Name">
             <input id="last-name" type="text" name="last_name" placeholder="Last Name">
-            <input id="email" type="email" name="email" placeholder="E-mail">
+            <!--Due to the requirements of the assignment, the javascript will do the checking rather than the input type email-->
+            <input id="email" type="text" name="email" placeholder="E-mail">
             <textarea id="message" name="message" cols="50" rows="10" title="message"></textarea>
-            <button type="submit" onclick="validate()">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </main>
 </div>
